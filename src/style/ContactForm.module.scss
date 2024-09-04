@@ -1,0 +1,27 @@
+.formStyle{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 3rem;
+    button{
+        width: 30%;
+        margin-top: 0.5rem;
+        background-color:rgb(143, 143, 225);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        &:hover{
+            background-color: blue;
+        }
+    }
+}
+
+.input{
+    background-color: rgb(237, 239, 241);
+    width: 30%;
+    display: block;
+   h1{
+    align-items: center;
+    text-align: center;
+   }
+}
