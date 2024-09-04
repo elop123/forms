@@ -26,15 +26,14 @@ else if (name.length < 6 && !specialSigns.test(name)) {
 useEffect(()=>{
     const validEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    if (email.length === 0){
-        setError('')
-    }
-    else if(validEmail.test(email)){
+    if (email.length == '') {
         setError('');
-    }
-    else{
+      } else if (!validEmail.test(email)) {
         setError('Your email is not valid');
-    }
+      } else {
+        setError('');
+      }
+    
 },[email])
 
     return(
